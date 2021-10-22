@@ -20,7 +20,7 @@ header {
     border: 1ps;
     display: flex;
     justify-content: flex-end;
-    /* background-color: red; */
+    
 }
 #cart-btn {
     text-decoration: none;
