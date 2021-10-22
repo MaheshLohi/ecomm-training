@@ -64,10 +64,10 @@ header {
 }
 
 .catagory {
+    z-index: 1;
+    position: relative;
     border-radius: 5px;
-    /* background-color: red; */
     color:  white;
-    /* padding-top: 50%; */
     margin: 10px;
     width: 445px;
     height: 520px;
@@ -75,6 +75,7 @@ header {
 }
 
 .catagory:hover {
+    /* z-index: 1; */
     opacity: 0.5;
     
 }
@@ -96,7 +97,14 @@ header {
 }
 
 .shopnow-btn {
+    z-index: 2;
+    position: absolute;
+    background-color: white;
+    color: black;
+    font-weight: 600;
     margin-top: 384px;
     padding: 8px;
-    border: 1px solid black;
+    border: 3px solid black;
+    width: 80px;
+    margin-left: 40%;
 }
