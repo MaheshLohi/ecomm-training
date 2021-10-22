@@ -20,7 +20,7 @@ class ProviderSeeder extends Seeder
             'email'=>'princy@gmail.com',
             'password'=>Hash::make('12345'),
             'phone_number'=>'123456789',
-            'category'=>'provider'
+            'category'=>'fashion'
         ]);
 
         DB::table('providers')->insert([
@@ -29,7 +29,7 @@ class ProviderSeeder extends Seeder
             'email'=>'anandhu@gmail.com',
             'password'=>Hash::make('12345'),
             'phone_number'=>'0123456789',
-            'category'=>'provider'
+            'category'=>'food'
         ]);
 
         DB::table('providers')->insert([
@@ -38,7 +38,7 @@ class ProviderSeeder extends Seeder
             'email'=>'robin@gmail.com',
             'password'=>Hash::make('12345'),
             'phone_number'=>'2345678901', 
-            'category'=>'provider'
+            'category'=>'electronics'
         ]);
     }
 
