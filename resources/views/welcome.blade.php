@@ -17,14 +17,17 @@
         </header>
 
         <div class="content">
-            <div class="catagory">
-                <h1>Cat 1</h1>
+            <div class="catagory" id="food-cat">
+                <h1>Food</h1>
+                <div class ="shopnow-btn">Shop now</div>
             </div>
-            <div class="catagory">
-                <h1>Cat 2</h1>
+            <div class="catagory" id = "electronics-cat">
+                <h1>Electronics</h1>
+                <div class ="shopnow-btn">Shop now</div>
             </div>
-            <div class="catagory">
-                <h1>Cat 3</h1>
+            <div class="catagory" id = "fashion-cat">
+                <h1>Fashion</h1>
+                <div class ="shopnow-btn">Shop now</div>
             </div>
         </div>
     </body>
