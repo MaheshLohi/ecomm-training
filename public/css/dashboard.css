@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Quicksand", sans-serif;
+}
+
+a:hover {
+  text-decoration: none !important;
+  color: white !important;
+}
+
+.header {
+  display: flex;
+  background-color: #390546;
+  justify-content: space-between;
+  padding: 8px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+
+.header-left {
+  width: 30%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.logo img {
+  height: 60px;
+  width: 150px;
+  margin-left: 16px;
+}
+
+.name {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.logout-btn {
+  padding: 10px 16px;
+  background-color: red;
+  color: white;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.logout-btn:hover {
+  background-color: rgb(179, 6, 6);
+}
+
+.content {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  margin-top: 9vh;
+}
+
+.products {
+  width: 70%;
+  height: 90vh;
+}
+
+th {
+  position: sticky;
+  top: 0;
+}
+
+td {
+  text-align: center;
+}
+.description {
+  text-align: left;
+}
+
+.orders {
+  width: 30%;
+  height: 80vh;
+  border-left: 3px solid white;
+}
+
+.list-head {
+  display: flex;
+  align-items: center;
+  padding: 30px 8px;
+  height: 30px;
+  background-color: #cacad3;
+  justify-content: space-evenly;
+}
+
+.add-btn {
+  padding: 8px 16px;
+  background-color: green;
+  color: white;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.add-btn:hover {
+  background-color: darkgreen;
+}
+
+.heading {
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.table-responsive {
+  max-height: 70vh;
+}
+
+.order-list {
+  max-height: 70vh;
+  overflow: scroll;
+}
+
+.order {
+  padding: 20px;
+  background-color: #390546;
+  border-bottom: 2px solid white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.time {
+  color: grey;
+}
+
+.btn-details {
+  color: #007bff;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding: 16px;
+}
+
+.footer-caption{
+    text-align: center;
+    width: 100%;
+}
+
+.footer-items {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+ul {
+  list-style: none;
+  color: grey;
+}
+
+li:hover {
+  cursor: pointer;
+  color: white;
+}
