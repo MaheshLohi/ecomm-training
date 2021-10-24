@@ -143,97 +143,89 @@
             </div>
             <div class="order-list">
                 <div class="order">
-                    <span class="name">
-                        Anandhu
-                    </span>
-                    <span class="time">
-                        2021-10-11 05:58:56
-                    </span>
-                    <a href="" class="btn-details">View Details -></a>
+
+                    <div class="order-top">
+                        <span class="name">
+                            Anandhu
+                        </span>
+                        <span class="time">
+                            2021-10-11 05:58:56
+                        </span>
+                        <span class="status-red">Pending</span>
+                    </div>
+
+                    <div class="order-bottom">
+                        <a href="" class="btn-details">View Details -></a>
+                    </div>
                 </div>
                 <div class="order">
-                    <span class="name">
-                        Anandhu
-                    </span>
-                    <span class="time">
-                        2021-10-11 05:58:56
-                    </span>
-                    <a href="" class="btn-details">View Details -></a>
-                </div>
-                <div class="order">
-                    <span class="name">
-                        Anandhu
-                    </span>
-                    <span class="time">
-                        2021-10-11 05:58:56
-                    </span>
-                    <a href="" class="btn-details">View Details -></a>
+
+                    <div class="order-top">
+                        <span class="name">
+                            Anandhu
+                        </span>
+                        <span class="time">
+                            2021-10-11 05:58:56
+                        </span>
+                        <span class="status-red">Pending</span>
+                    </div>
+
+                    <div class="order-bottom">
+                        <a href="" class="btn-details">View Details -></a>
+                    </div>
                 </div>
 
 
                 <div class="order">
-                    <span class="name">
-                        Sam Sunil
-                    </span>
-                    <span class="time">
-                        2021-10-11 05:58:56
-                    </span>
-                    <a href="" class="btn-details">View Details -></a>
+
+                    <div class="order-top">
+                        <span class="name">
+                            Anandhu
+                        </span>
+                        <span class="time">
+                            2021-10-11 05:58:56
+                        </span>
+                        <span class="status-green">Shipped</span>
+                    </div>
+
+                    <div class="order-bottom">
+                        <a href="" class="btn-details">View Details -></a>
+                    </div>
                 </div>
                 <div class="order">
-                    <span class="name">
-                        Sam Sunil
-                    </span>
-                    <span class="time">
-                        2021-10-11 05:58:56
-                    </span>
-                    <a href="" class="btn-details">View Details -></a>
+
+                    <div class="order-top">
+                        <span class="name">
+                            Anandhu
+                        </span>
+                        <span class="time">
+                            2021-10-11 05:58:56
+                        </span>
+                        <span class="status-green">Shipped</span>
+                    </div>
+
+                    <div class="order-bottom">
+                        <a href="" class="btn-details">View Details -></a>
+                    </div>
                 </div>
                 <div class="order">
-                    <span class="name">
-                        Sam Sunil
-                    </span>
-                    <span class="time">
-                        2021-10-11 05:58:56
-                    </span>
-                    <a href="" class="btn-details">View Details -></a>
+
+                    <div class="order-top">
+                        <span class="name">
+                            Anandhu
+                        </span>
+                        <span class="time">
+                            2021-10-11 05:58:56
+                        </span>
+                        <span class="status-red">Pending</span>
+                    </div>
+
+                    <div class="order-bottom">
+                        <a href="" class="btn-details">View Details -></a>
+                    </div>
                 </div>
-                <div class="order">
-                    <span class="name">
-                        Sam Sunil
-                    </span>
-                    <span class="time">
-                        2021-10-11 05:58:56
-                    </span>
-                    <a href="" class="btn-details">View Details -></a>
-                </div>
-                <div class="order">
-                    <span class="name">
-                        Sam Sunil
-                    </span>
-                    <span class="time">
-                        2021-10-11 05:58:56
-                    </span>
-                    <a href="" class="btn-details">View Details -></a>
-                </div>
-                <div class="order">
-                    <span class="name">
-                        Sam Sunil
-                    </span>
-                    <span class="time">
-                        2021-10-11 05:58:56
-                    </span>
-                    <a href="" class="btn-details">View Details -></a>
-                </div>
-                <div class="order">
-                    <span class="name">
-                        Sam Sunil
-                    </span>
-                    <span class="time">
-                        2021-10-11 05:58:56
-                    </span>
-                    <a href="" class="btn-details">View Details -></a>
-                </div>
+
+
             </div>
 
         </div>
@@ -250,9 +242,7 @@
             <li>Terms & Conditions</li>
             <li>Support : letstalk@ekart.support</li>
         </ul>
-        <div class="footer-caption">
-            &copy; Copyright 2021 , www.ekart.in , All rights reserved
-        </div>
+
     </footer>
 
 </body>

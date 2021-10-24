@@ -122,16 +122,33 @@ td {
   padding: 20px;
   background-color: #390546;
   border-bottom: 2px solid white;
+}
+
+.order-top{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+
+}
+
+.order-bottom{
+  width: 100%;
+  text-align: center;
 }
 
 .time {
   color: grey;
 }
 
+.status-red{
+  color: red;
+}
+
+.status-green{
+  color: lightgreen;
+}
+
 .btn-details {
-  color: #007bff;
+  color: #ffc107;
 }
 
 footer {
@@ -143,10 +160,6 @@ footer {
   padding: 16px;
 }
 
-.footer-caption{
-    text-align: center;
-    width: 100%;
-}
 
 .footer-items {
   display: flex;
