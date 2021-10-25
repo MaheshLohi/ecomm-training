@@ -17,6 +17,7 @@ Route::get('/', function () {
 
 
 
+
 Route::get('/dashboard', 'dashboardController@providerView');
 
 Route::get('/login', function () {
