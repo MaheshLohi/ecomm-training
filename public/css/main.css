@@ -17,9 +17,19 @@ header {
 }
 
 .left {
-    width: 50%;
-    margin-right: 489px;
+    width: 82%;
+    margin-right: 30px;
+    /* margin-right: 489px; */
+    /* margin-right: 400px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
+
+.user-name {
+    padding-top: 18px;
+}
+
 .header-btns {
     width: auto;
     padding-top: 4px;

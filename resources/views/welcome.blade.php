@@ -12,8 +12,11 @@
         <header>
             <div class="left">
                 <h1>E-commerce web</h1>
+                <div class="user-name">
+                    <h4>Hello, Sam Sunil</h4>
+                </div>
             </div>
-        <div class="header-btns">
+            <div class="header-btns">
                 <a id="cart-btn" href="#">My Cart</a>
                 <a id="login-btn" href="/login">Log in</a>
             </div>
