@@ -24,7 +24,6 @@ class User extends Migration
             $table->string('phone')->unique();
             $table->string('password');
             
-            
         
         
         });
