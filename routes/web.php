@@ -23,3 +23,5 @@ Route::get('/login', function () {
     return view('login');
 });
 
+Route::get('/orderdetails', 'orderdetailscontroller@orderdetailsView');
+
