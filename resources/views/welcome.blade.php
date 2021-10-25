@@ -10,6 +10,9 @@
     </head>
     <body>
         <header>
+            <div class="left">
+                <h1>E-commerce web</h1>
+            </div>
         <div class="header-btns">
                 <a id="cart-btn" href="#">My Cart</a>
                 <a id="login-btn" href="/login">Log in</a>
