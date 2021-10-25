@@ -14,3 +14,12 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+
+Route::get('/dashboard', 'dashboardController@providerView');
+
+Route::get('/login', function () {
+    return view('login');
+});
+
