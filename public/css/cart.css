@@ -34,9 +34,16 @@
 .name{
     color: white;
 }
+
 .container{
-    margin :10px 20px;
-    height:300px;
+    height: 82vh;
+    margin: 15px 200px;
+    overflow: scroll;
+}
+.content{
+    margin :10px 50px;
+    width: 900px;
+    height:150px;
     border: black 1pt solid;
     display: flex;
     border-radius: 10px;
@@ -45,39 +52,41 @@
 .item-image{
     padding: 5px;
     flex: 1;
-    width: 50%;
-    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
-.item-image span img{
+
+.item-details{
+    flex: 3;
+    padding-top: 5px;
+}
+
+.item-image img{
     width: 90%;
 }
-.item-details{
-    flex: 2;
-    width: 50%;
-    padding: 15px;
-}
-.item-details p{
-    position: relative;
-}
+
 .item-features{
-    height: 80%;
+    height: fit-content;
 }
+
 .item-features a{
     text-decoration: none;
-    line-height: 40px;
+    line-height: 30px;
 }
 
 .item-btns{
-    position: absolute;
+    margin-top: 5px;
 }
+
 .item-btns button{
-    padding: 20px 80px;
+    padding: 8px 10px;
     color:white;
-    font-size: 16px;
+    font-size: 14px;
     background-color: rgb(144, 158, 196);
     border: none;
-    border-radius: 10px;
+    border-radius: 8px;
     
 }
 .item-btns button:hover{
@@ -96,11 +105,10 @@
     align-items: center;
 }
 
-.footer li{
-    
+.footer li{  
     display: inline-block;
     margin: 50px;
-    color: aliceblue;   
+    color: white;   
 }
 .item-count{
     border: 1pt solid rgb(160, 157, 157);

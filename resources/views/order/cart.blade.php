@@ -24,45 +24,135 @@
     </div>
 
     <div class="container">
-        <div class="item-image">
-            <span class="image">
-                <img src="https://m.media-amazon.com/images/I/51uhx9+E88L._SL1000_.jpg" alt="">
-            </span>
-        </div>
-        <div class="item-details">
-            <div class="item-features">
-                <h2>Apple MacBook Air (13-inch, Previous Model, 8GB RAM, 128GB Storage, 1.6GHz Intel Core i5) - Gold</h2> 
-                <h3>Price : ₹ 89,999</h3>
-                <p> Model Name	MacBook Air
-                    Brand	Apple
-                    Specific Uses For Product	Personal, gaming, business
-                    Screen Size	13.3 Inches
-                    Operating System	MacOS 10.14 Mojave
-                    CPU Manufacturer	Intel
-                    Special Feature	Fingerprint reader
-                    Colour	Gold
-                </p>
-                <a href="#">Product details</a> <br>
-            <div class="count-container">
-                <span>Number of Items </span>
-                <div class="item-count"> 
-                    <button class="decrement">-</button>
-                    <span class="count"> 0 </span>
-                    <button class="increment">+</button>
+
+        <div class="content">
+            <div class="item-image">
+                    <img src="https://m.media-amazon.com/images/I/51uhx9+E88L._SL1000_.jpg" alt="">
+            </div>
+            <div class="item-details">
+                <div class="item-features">
+                    <h3>Apple MacBook Air (8GB RAM, 128GB Storage, 1.6GHz Intel Core i5)</h3> 
+                    <h4>Price : ₹ 89,999</h4>
+                    <a href="#">Product details</a> <br>
+                <div class="count-container">
+                    <span>Number of Items </span>
+                    <div class="item-count"> 
+                        <button class="decrement">-</button>
+                        <span class="count"> 0 </span>
+                        <button class="increment">+</button>
+                    </div>
                 </div>
             </div>
+            <div class="item-btns">
+                <button>Remove from Cart</button>
+                <button>Place Order</button>
+            </div>
+            </div>
         </div>
-        <div class="item-btns">
-            <button>Remove from Cart</button>
-            <button>Place Order</button>
+
+        <div class="content">
+            <div class="item-image">
+                    <img src="https://m.media-amazon.com/images/I/51uhx9+E88L._SL1000_.jpg" alt="">
+            </div>
+            <div class="item-details">
+                <div class="item-features">
+                    <h3>Apple MacBook Air (8GB RAM, 128GB Storage, 1.6GHz Intel Core i5)</h3> 
+                    <h4>Price : ₹ 89,999</h4>
+                    <a href="#">Product details</a> <br>
+                <div class="count-container">
+                    <span>Number of Items </span>
+                    <div class="item-count"> 
+                        <button class="decrement">-</button>
+                        <span class="count"> 0 </span>
+                        <button class="increment">+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item-btns">
+                <button>Remove from Cart</button>
+                <button>Place Order</button>
+            </div>
+            </div>
         </div>
+
+        <div class="content">
+            <div class="item-image">
+                    <img src="https://m.media-amazon.com/images/I/51uhx9+E88L._SL1000_.jpg" alt="">
+            </div>
+            <div class="item-details">
+                <div class="item-features">
+                    <h3>Apple MacBook Air (8GB RAM, 128GB Storage, 1.6GHz Intel Core i5)</h3> 
+                    <h4>Price : ₹ 89,999</h4>
+                    <a href="#">Product details</a> <br>
+                <div class="count-container">
+                    <span>Number of Items </span>
+                    <div class="item-count"> 
+                        <button class="decrement">-</button>
+                        <span class="count"> 0 </span>
+                        <button class="increment">+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item-btns">
+                <button>Remove from Cart</button>
+                <button>Place Order</button>
+            </div>
+            </div>
         </div>
+
+        <div class="content">
+            <div class="item-image">
+                    <img src="https://m.media-amazon.com/images/I/51uhx9+E88L._SL1000_.jpg" alt="">
+            </div>
+            <div class="item-details">
+                <div class="item-features">
+                    <h3>Apple MacBook Air (8GB RAM, 128GB Storage, 1.6GHz Intel Core i5)</h3> 
+                    <h4>Price : ₹ 89,999</h4>
+                    <a href="#">Product details</a> <br>
+                <div class="count-container">
+                    <span>Number of Items </span>
+                    <div class="item-count"> 
+                        <button class="decrement">-</button>
+                        <span class="count"> 0 </span>
+                        <button class="increment">+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item-btns">
+                <button>Remove from Cart</button>
+                <button>Place Order</button>
+            </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="item-image">
+                    <img src="https://m.media-amazon.com/images/I/51uhx9+E88L._SL1000_.jpg" alt="">
+            </div>
+            <div class="item-details">
+                <div class="item-features">
+                    <h3>Apple MacBook Air (8GB RAM, 128GB Storage, 1.6GHz Intel Core i5)</h3> 
+                    <h4>Price : ₹ 89,999</h4>
+                    <a href="#">Product details</a> <br>
+                <div class="count-container">
+                    <span>Number of Items </span>
+                    <div class="item-count"> 
+                        <button class="decrement">-</button>
+                        <span class="count"> 0 </span>
+                        <button class="increment">+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item-btns">
+                <button>Remove from Cart</button>
+                <button>Place Order</button>
+            </div>
+            </div>
+        </div>
+
     </div>
 
 
-    
-
-    
     <div class="footer">
         <ul class="footer-items">
             <li> Help Center</li>
