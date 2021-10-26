@@ -9,12 +9,29 @@
     <title>Login</title>
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css"> -->
     <link href="css/login.css" rel="stylesheet">
 
 </head>
 
 <body>
+    <div class="header">
+        <div class="header-right">
+            <span class="logo">
+                <img src="https://ekartlogistics.com/assets/images/ekWhiteLogo.png" alt="">
+            </span>
+        </div>
+
+
+        <div class="header-left">
+            <span class="name">
+                Urban Enterprises
+            </span>
+            <a href="" class="logout-btn">Logout</a>
+        </div>
+
+    </div>
+
     <div id="main-container">
 
 
@@ -29,7 +46,7 @@
             <input type="text" id="password">
 
             <div id="user">
-                <input type="radio" class ="usertype" name="usertype" id="consumer" value="Consumer"><label for="consumer">Consumer</label>
+                <input type="radio" class="usertype" name="usertype" id="consumer" value="Consumer"><label for="consumer">Consumer</label>
                   <input type="radio" class="usertype" name="usertype" id="provider" value="Provider"><label for="consumer">Provider</label><br>
             </div>
 
@@ -37,6 +54,7 @@
 
             <div id="bottom-login">
                 <input type="submit" id="submit-button" value="Login">
+                <input type="submit" id="submit-button" value="Back To Home">
 
             </div>
         </form>

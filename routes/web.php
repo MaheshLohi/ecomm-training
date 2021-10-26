@@ -18,6 +18,7 @@ Route::get('/', function () {
 
 
 Route::get('/dashboard', 'dashboardController@providerView');
+Route::get('/orderdetails', 'orderdetailsController@orderdetailsView');
 
 Route::get('/login', function () {
     return view('login');
