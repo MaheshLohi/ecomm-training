@@ -33,10 +33,10 @@
          <div>
             <label>Name</label>
             <br>
-            <input type="text" id="details" placeholder="Enter product name">
+            <input type="text" class="details" id="name" name="product_name" placeholder="Enter product name">
          </div>
          <br>
-         <div class="image">
+         <div class="image" id="image" name="product_image">
             <label>Image</label>
             <br>
             <input type="file">
@@ -45,23 +45,23 @@
          <div>
            <label>Description</label>
            <br>          
-            <textarea class="textarea" id="details" name="Product description" rows="3" cols="91" maxlength="100" minlength="3" placeholder="Enter product description"></textarea>
+            <textarea class="details" id="description" name="product_description" rows="3" cols="91" maxlength="100" minlength="3" placeholder="Enter product description"></textarea>
          </div>   
          <br>
          <div>
             <label>Quantity</label>
             <br> 
-            <input type="number" id="details" placeholder="Enter product quantity" min="1" required>
+            <input type="number" class="details" id="quantity" name="product_quantity" placeholder="Enter product quantity" min="1" required>
          </div> 
          <br>
          <div>
             <label>Price</label>
            <br>
-           <input type="number" id="details" placeholder="Enter product price" required>
+           <input type="number" class="details" id="price" name="product_price" placeholder="Enter product price" required>
          </div> 
          <br>  
          <div class="Btn">
-           <button type="submit" class="AddBtn">Add item</button>
+           <button type="submit" id="button" class="AddBtn">Add item</button>
          </div>  
         </form>  
     </div>          
