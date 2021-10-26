@@ -17,6 +17,7 @@ Route::get('/', function () {
 
 
 
+
 Route::get('/dashboard', 'dashboardController@providerView');
 
 Route::get('/login', function () {
@@ -26,3 +27,6 @@ Route::get('/login', function () {
 Route::get('/additem', function () {
     return view('additem');
 });
+=======
+Route::get('/login','LoginController@login');
+
