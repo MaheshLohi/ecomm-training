@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Quicksand", sans-serif;
+  
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button 
+{
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] 
+{
+    -moz-appearance: textfield;
+}
+.body{
+    background-color: lightgray;
+}
+a:hover {
+    text-decoration: none !important;
+    color: white !important;
+  }
+  
+  .header {
+    display: flex;
+    background-color: #390546;
+    justify-content: space-between;
+    padding: 8px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    
+  }
+  
+  .header-left {
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  .logo img {
+    height: 60px;
+    width: 150px;
+    margin-left: 16px;
+  }
+  
+  .name {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  .logout-btn {
+    padding: 10px 16px;
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+  }
+  
+  .logout-btn:hover {
+    background-color: rgb(179, 6, 6);
+  }
+  .body{
+    width:85%;
+    margin: 80px auto 0px auto;   
+  }
+  .addItem{
+    padding: 50px;
+    width:100%;
+    height: 100%;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 1px  rgba(0, 0, 161, 0.3);
+    box-shadow: 2px 5px 10px 4px;
+  }
+  #details{
+      width:70%;
+      border:1px soid #ddd;
+      border-radius: 10px;
+      outline: 0;
+      padding:7px;
+      background-color: #fff;
+      box-shadow: 5px 5px 5px 0.5px;
+  }
+  .textarea{
+      resize: none;
+      border:1px soid #ddd;
+      border-radius: 10px;
+      outline: 0px;
+      padding:7px;
+      border: 1px soid rgba(216, 161, 161, 0.3);
+      box-shadow: 2px 2px 10px;  
+  }
+  
+  .AddBtn{
+    width:200px;
+    font-size:16px;
+    cursor: pointer;
+    background-color: grey;
+    display: inline-block;
+    padding: 17px 27px;
+    cursor: pointer;
+    color:black;
+   border-radius: 8px;
+   box-shadow: 0 1px 0.5px 1px rgb(43, 42, 42);
+  }
+
+
+  

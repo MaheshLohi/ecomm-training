@@ -14,7 +14,7 @@
     <div class="header">
         <div class="header-right">
             <span class="logo">
-                <img src="https://ekartlogistics.com/assets/images/ekWhiteLogo.png" alt="">
+                <img src="https://ekartlogistics.com/assets/images/ekWhiteLogo.png" alt="boost_logo">
             </span>
         </div>
 
