@@ -37,7 +37,7 @@
                 <span class="heading">
                  Category -  {{session('admin')->category}}
                 </span>
-                <a href="" class="add-btn">Add Item</a>
+                <a href="/dashboard/add" class="add-btn">Add Item</a>
             </div>
             <div class="table-responsive">
 
