@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Quicksand", sans-serif;
+}
+
+body {
+    background-color: white;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    margin-right: 20px;
+    justify-content: space-between;
+    /* justify-content: space-around; */
+    background-color: #390546;
+    height: 50px;
+    padding: 10px;
+    box-shadow: 0px -4px 6px 9px #888888;
+}
+
+.logo {
+    height: 60px;
+    width: 150px;
+    margin-left: 16px;
+}
+
+#cart-btn {
+    border: 2px solid #880db1;
+    border-radius: 19.5px;
+    padding: 10px 30px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: 180px;
+    color: #5f0f7a;
+    margin-top: 30px;
+    cursor: pointer;
+    width: 150px;
+    text-decoration: none;
+}
+
+#login-btn {
+    border: 2px solid #880db1;
+    border-radius: 19.5px;
+    padding: 10px 30px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: 180px;
+    color: #5f0f7a;
+    margin-top: 30px;
+    cursor: pointer;
+    width: 150px;
+    text-decoration: none;
+}
+
+.header-btns {
+    /* width: auto; */
+    padding-top: 4px;
+    padding-right: 4px;
+    border: 1ps;
+    display: flex;
+    justify-content: flex-end;
+    justify-content: right;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 90px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+.logo img {
+    height: 60px;
+    width: 150px;
+    margin-left: 16px;
+}
+
+.select {
+    border: 5px;
+    margin-top: 60px;
+    margin-bottom: 70px;
+    margin-right: 700px;
+    padding-left: 20px;
+    /* position: relative; */
+}
+
+p {
+    line-height: 20px;
+}
+
+.btn {
+    border: 2px solid #880db1;
+    border-radius: 19.5px;
+    padding: 10px 30px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: 180px;
+    color: #5f0f7a;
+    margin-top: 30px;
+    cursor: pointer;
+    width: 150px;
+    text-decoration: none;
+}
