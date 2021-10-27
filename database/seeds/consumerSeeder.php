@@ -13,7 +13,7 @@ class consumerSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('consumer')->insert(
+        DB::table('consumers')->insert(
           [
                
             [

@@ -67,11 +67,11 @@ html,
         #main-container{
             
     width: 600px;
-    height: 370px;
+    height: 400px;
     display: block;
     border-radius: 4px;
     box-sizing: border-box;
-    overflow: auto;
+  
     outline: 0;
     background-color: white;
     padding: 30px;
@@ -147,4 +147,9 @@ html,
 
       #user{
           margin-top:30px;
+      }
+
+      .msg{
+          color: red;
+          font-weight: bold;
       }

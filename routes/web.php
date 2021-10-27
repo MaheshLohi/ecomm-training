@@ -11,10 +11,30 @@
 |
 */
 
+
+
 Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/login','LoginController@login');
 
-Route::get('/dashboard','dashboardController@providerView');
+Route::get('/details','itemdetailsController@details');
+Route::get('/dashboard', 'dashboardController@providerView')->middleware('admin');
+
+Route::get('/login', function () {
+    return view('login');
+});
+
+Route::get('/additem', function () {
+    return view('additem');
+});
+
+Route::get('/itemList', function () {
+    return view('itemList');
+});
+Route::post('/login','loginController@login');
+Route::get('/admin/logout','logoutController@adminLogout');
+Route::get('/logout','logoutController@userLogout');
+
+
+

@@ -17,7 +17,7 @@ class CheckAdmin
     {
 
         if(!session('admin')){
-            return redirect('/');
+            return redirect('/login');
         }
         return $next($request);
     }
