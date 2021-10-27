@@ -21,6 +21,8 @@ Route::get('/', function () {
 
 
 Route::get('/dashboard', 'dashboardController@providerView');
+
+
 Route::get('/orderdetails', 'orderdetailsController@orderdetailsView');
 
 
@@ -34,9 +36,15 @@ Route::get('/dashboard', 'dashboardController@providerView')->middleware('admin'
 
 
 
+
 Route::get('/login', function () {
     return view('login');
 });
+Route::get('/cart', function () {
+    return view('order.cart');
+});
+
+
 
 
 Route::get('/additem', function () {
@@ -51,6 +59,7 @@ Route::post('/login','loginController@login');
 
 Route::get('/admin/logout','logoutController@adminLogout');
 Route::get('/logout','logoutController@userLogout');
+
 
 
 
