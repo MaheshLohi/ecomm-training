@@ -20,13 +20,13 @@ Route::get('/', function () {
 
 
 
-Route::get('/dashboard', 'dashboardController@providerView');
+
 Route::get('/orderdetails', 'orderdetailsController@orderdetailsView');
 
 
 Route::get('/details','itemdetailsController@details');
 
-Route::get('/dashboard', 'dashboardController@providerView');
+
 
 
 
@@ -43,7 +43,7 @@ Route::get('/additem', function () {
     return view('additem');
 });
 
-Route::get('/login','LoginController@login');
+
 
 
 
