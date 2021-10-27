@@ -1,0 +1,114 @@
+body {
+    color: #636b6f;
+    font-family: Montserrat, sans-serif;
+    font-weight: 100;
+    height: 70%;
+    margin: 0px;
+    margin-top: 50px;
+}
+
+.header {
+    display: flex;
+    background-color: #390546;
+    justify-content: space-between;
+    padding: 8px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+.header-left {
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logo img {
+    height: 60px;
+    width: 150px;
+    margin-left: 16px;
+}
+
+.name {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.logout-btn {
+    padding: 10px 16px;
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.logout-btn:hover {
+    background-color: rgb(179, 6, 6);
+}
+
+#button1 {
+    border: 2px solid #390546;
+    border-radius: 15px;
+    padding: 7px 20px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: 18px;
+    color: #390546;
+    margin-top: 30px;
+    cursor: pointer;
+    width: 150px;
+}
+
+.info {
+    background-color: grey;
+    height: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    padding-left: 30px;
+    padding-top: 10px;
+    border-radius: 40px;
+    letter-spacing: 2px;
+}
+
+.order {
+    height: 620px;
+    width: 700px;
+    margin-left: 300px;
+    border: 2px solid #390546;
+    padding: 30px;
+    margin-top: 100px;
+}
+
+.orderbottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+td {
+    width: 100px;
+    /* display: flex; */
+    padding: 7px;
+    text-align: justify;
+}
+
+th {
+    width: 100px;
+    /* display: flex; */
+    padding: 10px;
+    text-align: justify;
+}
+
+#totalamount {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 100;
+}
+
+table {
+    padding-left: 30px;
+}

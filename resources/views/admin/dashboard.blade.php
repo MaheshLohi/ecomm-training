@@ -14,16 +14,18 @@
     <div class="header">
         <div class="header-right">
             <span class="logo">
-                <img src="https://ekartlogistics.com/assets/images/ekWhiteLogo.png" alt="">
+                <img src="https://ekartlogistics.com/assets/images/ekWhiteLogo.png" alt="boost_logo">
             </span>
         </div>
 
 
         <div class="header-left">
             <span class="name">
-                Urban Enterprises
+               @if(session('admin'))
+            {{session('admin')->name}}
+            @endif
             </span>
-            <a href="" class="logout-btn">Logout</a>
+            <a href="/admin/logout" class="logout-btn">Logout</a>
         </div>
 
     </div>
@@ -138,7 +140,7 @@
         <div class="orders">
             <div class="list-head">
                 <span class="heading">
-                    Orders - 12
+                    Orders 
                 </span>
             </div>
             <div class="order-list">
