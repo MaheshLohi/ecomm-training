@@ -14,7 +14,7 @@ class User extends Migration
     public function up()
     {
        
-        Schema::create('consumer', function(Blueprint $table)
+        Schema::create('consumers', function(Blueprint $table)
         { 
             $table->bigIncrements('id');
             $table->timestamps();

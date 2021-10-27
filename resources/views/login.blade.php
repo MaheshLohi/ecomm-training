@@ -20,25 +20,29 @@
 
         <form id="login" action="/login" method="POST">
             {{ csrf_field() }}
+            
             <p>Email Id</p>
-            <input type="text" id="email-id">
+            <input type="text" name="email_id"  id="email_id">
+          
             <p class="label">Password
                 <span class="required">*</span>
                 <span class="forgot-pass-fl-right">Forgot Password?</span>
             </p>
-            <input type="text" id="password">
+            <input type="password" name="password" id="password">
 
             <div id="user">
-                <input type="radio" class ="usertype" name="usertype" id="consumer" value="Consumer"><label for="consumer">Consumer</label>
-                  <input type="radio" class="usertype" name="usertype" id="provider" value="Provider"><label for="consumer">Provider</label><br>
+                <input type="radio" class ="usertype" name="user_type" checked id="consumer" value="Consumer"><label for="consumer">Consumer</label>
+                  <input type="radio" class="usertype" name="user_type" id="provider" value="Provider"><label for="consumer">Provider</label><br>
             </div>
 
 
 
             <div id="bottom-login">
                 <input type="submit" id="submit-button" value="Login">
+              
 
             </div>
+            <p class="msg">{{session('alert')}}</p>
         </form>
     </div>
 </body>
