@@ -21,6 +21,7 @@ Route::get('/', function () {
 
 
 Route::get('/dashboard', 'dashboardController@providerView');
+Route::get('/orderdetails', 'orderdetailsController@orderdetailsView');
 
 
 Route::get('/details','itemdetailsController@details');
