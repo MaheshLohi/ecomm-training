@@ -37,7 +37,7 @@
                 <span class="heading">
                  Category -  {{session('admin')->category}}
                 </span>
-                <a href="" class="add-btn">Add Item</a>
+                <a href="dashboard/add" class="add-btn">Add Item</a>
             </div>
             <div class="table-responsive">
 
@@ -49,84 +49,25 @@
                             <th scope="col">Image</th>
                             <th scope="col">Description</th>
                             <th scope="col">Quantity</th>
+                            <th scope="col">Price</th>
 
                             <th></th>
                             <th></th>
                         </tr>
                     </thead>
                     <tbody>
+                        @foreach($datas as $data)
                         <tr>
-                            <td>Boost</td>
-                            <td><img height="100" width="100" src="https://m.media-amazon.com/images/I/61lHejxvFlL._SL1000_.jpg" alt="product-image"></td>
-                            <td class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, distinctio aliquam recusandae hic fugit nisi voluptatibus dicta autem velit provident.</td>
-                            <td>12</td>
+                            <td>{{$data->product_name}}</td>
+                            <td><img height="100" width="100" src="/images/{{$data->image_url}}" alt="product-image"></td>
+                            <td class="description">{{$data->description}}</td>
+                            <td>{{$data->quantity}}</td>
+                            <td>{{$data->price}}</td>
                             <td><a href="" class="btn btn-primary">Update</a></td>
-                            <td><a href="" class="btn btn-warning">Delete</a></td>
+                            <td><a href="/dashboard/{{$data->id}}" class="btn btn-warning">Delete</a></td>
                         </tr>
-                        <tr>
-                            <td>Boost</td>
-                            <td><img height="100" width="100" src="https://m.media-amazon.com/images/I/61lHejxvFlL._SL1000_.jpg" alt="product-image"></td>
-                            <td class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, distinctio aliquam recusandae hic fugit nisi voluptatibus dicta autem velit provident.</td>
-                            <td>12</td>
-                            <td><a href="" class="btn btn-primary">Update</a></td>
-                            <td><a href="" class="btn btn-warning">Delete</a></td>
-                        </tr>
-                        <tr>
-                            <td>Boost</td>
-                            <td><img height="100" width="100" src="https://m.media-amazon.com/images/I/61lHejxvFlL._SL1000_.jpg" alt="product-image"></td>
-                            <td class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, distinctio aliquam recusandae hic fugit nisi voluptatibus dicta autem velit provident.</td>
-                            <td>12</td>
-                            <td><a href="" class="btn btn-primary">Update</a></td>
-                            <td><a href="" class="btn btn-warning">Delete</a></td>
-                        </tr>
-                        <tr>
-                            <td>Boost</td>
-                            <td class="description"><img height="100" width="100" src="https://m.media-amazon.com/images/I/61lHejxvFlL._SL1000_.jpg" alt="product-image"></td>
-                            <td class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, distinctio aliquam recusandae hic fugit nisi voluptatibus dicta autem velit provident.</td>
-                            <td>12</td>
-                            <td><a href="" class="btn btn-primary">Update</a></td>
-                            <td><a href="" class="btn btn-warning">Delete</a></td>
-                        </tr>
-                        <tr>
-                            <td>Boost</td>
-                            <td><img height="100" width="100" src="https://m.media-amazon.com/images/I/61lHejxvFlL._SL1000_.jpg" alt="product-image"></td>
-                            <td class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, distinctio aliquam recusandae hic fugit nisi voluptatibus dicta autem velit provident.</td>
-                            <td>12</td>
-                            <td><a href="" class="btn btn-primary">Update</a></td>
-                            <td><a href="" class="btn btn-warning">Delete</a></td>
-                        </tr>
-                        <tr>
-                            <td>Boost</td>
-                            <td><img height="100" width="100" src="https://m.media-amazon.com/images/I/61lHejxvFlL._SL1000_.jpg" alt="product-image"></td>
-                            <td class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, distinctio aliquam recusandae hic fugit nisi voluptatibus dicta autem velit provident.</td>
-                            <td>12</td>
-                            <td><a href="" class="btn btn-primary">Update</a></td>
-                            <td><a href="" class="btn btn-warning">Delete</a></td>
-                        </tr>
-                        <tr>
-                            <td>Boost</td>
-                            <td><img height="100" width="100" src="https://m.media-amazon.com/images/I/61lHejxvFlL._SL1000_.jpg" alt="product-image"></td>
-                            <td class="description"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, distinctio aliquam recusandae hic fugit nisi voluptatibus dicta autem velit provident.</td>
-                            <td>12</td>
-                            <td><a href="" class="btn btn-primary">Update</a></td>
-                            <td><a href="" class="btn btn-warning">Delete</a></td>
-                        </tr>
-                        <tr>
-                            <td>Boost</td>
-                            <td><img height="100" width="100" src="https://m.media-amazon.com/images/I/61lHejxvFlL._SL1000_.jpg" alt="product-image"></td>
-                            <td class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, distinctio aliquam recusandae hic fugit nisi voluptatibus dicta autem velit provident.</td>
-                            <td>12</td>
-                            <td><a href="" class="btn btn-primary">Update</a></td>
-                            <td><a href="" class="btn btn-warning">Delete</a></td>
-                        </tr>
-                        <tr>
-                            <td>Boost</td>
-                            <td><img height="100" width="100" src="https://m.media-amazon.com/images/I/61lHejxvFlL._SL1000_.jpg" alt="product-image"></td>
-                            <td class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, distinctio aliquam recusandae hic fugit nisi voluptatibus dicta autem velit provident.</td>
-                            <td>12</td>
-                            <td><a href="" class="btn btn-primary">Update</a></td>
-                            <td><a href="" class="btn btn-warning">Delete</a></td>
-                        </tr>
+                        @endforeach
+                        
                     </tbody>
                 </table>
 

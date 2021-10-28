@@ -30,19 +30,24 @@
     </header>
 
     <div class="content">
-        <div class="catagory" id="food-cat">
+        <div class="catagory" id="food-cat" onclick= 'navigate("food")'>
             <h1>Food</h1>
             <div class="shopnow-btn">Shop now</div>
         </div>
-        <div class="catagory" id="electronics-cat">
+        <div class="catagory" id="electronics-cat" onclick= 'navigate("electronics")'>
             <h1>Electronics</h1>
             <div class="shopnow-btn">Shop now</div>
         </div>
-        <div class="catagory" id="fashion-cat">
+        <div class="catagory" id="fashion-cat" onclick= 'navigate("fashion")'>
             <h1>Fashion</h1>
             <div class="shopnow-btn">Shop now</div>
         </div>
     </div>
 </body>
+<script>
+    function navigate(param) {
+        window.location.href = `/itemList/${param}`
+    }
+</script>
 
 </html>
