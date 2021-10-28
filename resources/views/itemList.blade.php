@@ -29,14 +29,16 @@
 
 <div class="container">
     <div class="row text-center py-5 " id="box" >
-        <div class="col-md-3 col-sm-6 my-3 my-md-0 ">
+      @foreach($productList as $data)
+
+      <div class="col-md-3 col-sm-6 my-3 my-md-0 ">
           <form action="/itemlist" method="post">
           <div class="card shadow">
               <div class="item-picture">
-                  <img height="100" width="100" src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/ae22e3a6-9590-401a-94f6-d8ecf42b4932.png?v=1625046387" alt="item picture " class="img-fluid card-img-top">
+                  <img  src="/images/{{$data->image_url}}" alt="item picture " class="img-fluid card-img-top" id="prod-img">
               </div>
               <div class="card-body">
-                  <h5 class="card-title">product 1</h5>
+                  <h5 class="card-title">{{$data->product_name}}</h5>
                   <h6>
                       <i class="fas fa-star"></i>
                       <i class="fas fa-star"></i>
@@ -45,96 +47,19 @@
                       <i class="far fa-star"></i>
                   </h6>
                   <p class="card-text">
-                     item details to be added
+                     {{$data->description}}
                   </p>
                   <h5>
-                      <span class="price">$679</span>
+                      <span class="price">Rs.{{$data->price}}</span>
                   </h5>
                   <button type="submit" class="btn btn-warning my-3" name="add">Add to Cart <i class="fas fa-shopping-cart"></i></button>
               </div>
           </div>
           </form>
-        </div>
-        <div class="col-md-3 col-sm-6 my-3 my-md-0">
-        <form action="/itemlist" method="post">
-          <div class="card shadow">
-              <div class="item-picture">
-                  <img height="100" width="100" src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/ae22e3a6-9590-401a-94f6-d8ecf42b4932.png?v=1625046387" alt="item picture " class="img-fluid card-img-top">
-              </div>
-              <div class="card-body">
-                  <h5 class="card-title">product 1</h5>
-                  <h6>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="far fa-star"></i>
-                  </h6>
-                  <p class="card-text">
-                     item details to be added
-                  </p>
-                  <h5>
-                      <span class="price">$679</span>
-                  </h5>
-                  <button type="submit" class="btn btn-warning my-3" name="add">Add to Cart <i class="fas fa-shopping-cart"></i></button>
-              </div>
-          </div>
-          </form>
-        </div>
-        <div class="col-md-3 col-sm-6 my-3 my-md-0">
-        <form action="/itemlist" method="post">
-          <div class="card shadow">
-              <div class="item-picture">
-                  <img height="100" width="100" src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/ae22e3a6-9590-401a-94f6-d8ecf42b4932.png?v=1625046387" alt="item picture " class="img-fluid card-img-top">
-              </div>
-              <div class="card-body">
-                  <h5 class="card-title">product 1</h5>
-                  <h6>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="far fa-star"></i>
-                  </h6>
-                  <p class="card-text">
-                     item details to be added
-                  </p>
-                  <h5>
-                      <span class="price">$679</span>
-                  </h5>
-                  <button type="submit" class="btn btn-warning my-3" name="add">Add to Cart <i class="fas fa-shopping-cart"></i></button>
-              </div>
-          </div>
-          </form>
-        </div>
-        <div class="col-md-3 col-sm-6 my-3 my-md-0">
-        <form action="/itemlist" method="post">
-          <div class="card shadow">
-              <div class="item-picture">
-                  <img height="100" width="100" src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/ae22e3a6-9590-401a-94f6-d8ecf42b4932.png?v=1625046387" alt="item picture " class="img-fluid card-img-top">
-              </div>
-              <div class="card-body">
-                  <h5 class="card-title">product 1</h5>
-                  <h6>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="far fa-star"></i>
-                  </h6>
-                  <p class="card-text">
-                     item details to be added
-                  </p>
-                  <h5>
-                      <span class="price">$679</span>
-                  </h5>
-                  <button type="submit" class="btn btn-warning my-3" name="add">Add to Cart <i class="fas fa-shopping-cart"></i></button>
-              </div>
-          </div>
-          </form>
-        </div>
-
+       
     </div>
+
+      @endforeach
 </div>
 
 

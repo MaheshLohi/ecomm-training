@@ -73,4 +73,8 @@ a:hover {
       margin-top: 10%;
   }
 
+ #prod-img {
+    max-width: 250px;
+    height: 300px;
+  }
   

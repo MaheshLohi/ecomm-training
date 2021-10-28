@@ -35,9 +35,9 @@
         <div class="products">
             <div class="list-head">
                 <span class="heading">
-                    Food List
+                 Category -  {{session('admin')->category}}
                 </span>
-                <a href="" class="add-btn">Add Item</a>
+                <a href="dashboard/add" class="add-btn">Add Item</a>
             </div>
             <div class="table-responsive">
 
