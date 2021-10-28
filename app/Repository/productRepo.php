@@ -32,4 +32,11 @@ class productRepo
         return json_decode($data);
  
     } 
+
+    public function deleteProduct($id) {
+        $data = Product::findOrFail($id);
+        $data->delete();
+        print_r($data);
+        // return $data;
+    }
 }

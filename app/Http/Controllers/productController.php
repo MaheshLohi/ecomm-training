@@ -60,4 +60,10 @@ class productController extends Controller
         $response =   $this->productRepo->fetchProduct($cat);
         return view('itemList', ["productList" => $response]);
     }
+
+    public function deleteProduct($id) {
+        
+        $this->productRepo->deleteProduct($id);
+        return redirect('/dashboard');
+    }
 }
