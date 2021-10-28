@@ -16,9 +16,12 @@ class productController extends Controller
     }
 
 
-public function showForm(){
-    return view('admin.add');
-}
+
+    public function showForm()
+    {
+        return view('admin.add');
+    }
+
 
     public function addProduct(Request $request)
     {
@@ -51,5 +54,19 @@ public function showForm(){
                 return back()->with('alert', 'Upload error');
             }
         }
+    }
+
+
+    public function fetchProduct($cat)
+    {
+
+        $response =   $this->productRepo->fetchProduct($cat);
+        return view('itemList', ["productList" => $response]);
+    }
+
+    public function deleteProduct($id) {
+        
+        $this->productRepo->deleteProduct($id);
+        return redirect('/dashboard');
     }
 }
