@@ -27,9 +27,11 @@ class productRepo
         $this->productModel->save();
     }
 
+
     public function fetchProduct($prod_cat) {
         $data = $this->productModel->where('product_category',$prod_cat)->get();
         return json_decode($data);
  
     } 
+
 }

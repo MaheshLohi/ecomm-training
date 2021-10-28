@@ -34,7 +34,7 @@ Route::get('/details','itemdetailsController@details');
 
 
 
-Route::get('/dashboard', 'dashboardController@providerView')->middleware('admin');
+
 
 
 
@@ -45,6 +45,7 @@ Route::get('/login', function () {
 Route::get('/cart', function () {
     return view('order.cart');
 });
+
 
 
 

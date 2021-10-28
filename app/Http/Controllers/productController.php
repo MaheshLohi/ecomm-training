@@ -16,10 +16,12 @@ class productController extends Controller
     }
 
 
+
     public function showForm()
     {
         return view('admin.add');
     }
+
 
     public function addProduct(Request $request)
     {
@@ -54,10 +56,12 @@ class productController extends Controller
         }
     }
 
+
     public function fetchProduct($cat)
     {
 
         $response =   $this->productRepo->fetchProduct($cat);
         return view('itemList', ["productList" => $response]);
     }
+
 }
