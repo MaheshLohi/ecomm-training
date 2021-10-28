@@ -27,6 +27,7 @@ class productRepo
         $this->productModel->save();
     }
 
+
     public function fetchProduct($prod_cat) {
         $data = $this->productModel->where('product_category',$prod_cat)->get();
         return json_decode($data);
@@ -36,7 +37,7 @@ class productRepo
     public function deleteProduct($id) {
         $data = Product::findOrFail($id);
         $data->delete();
-        print_r($data);
-        // return $data;
+        
+        return $data;
     }
 }
