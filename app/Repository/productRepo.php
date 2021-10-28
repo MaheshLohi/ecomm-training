@@ -28,8 +28,8 @@ class productRepo
     }
 
 
-    public function fetchProduct($prod_cat) {
-        $data = $this->productModel->where('product_category',$prod_cat)->get();
+    public function fetchProduct($prodCat) {
+        $data = $this->productModel->where('product_category',$prodCat)->get();
         return json_decode($data);
  
     } 
