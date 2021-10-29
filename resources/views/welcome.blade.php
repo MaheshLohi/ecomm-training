@@ -16,8 +16,11 @@
         <div class="left">
             <h1>E-commerce web</h1>
         </div>
-        
-        
+        <div class="user-name">
+            @if(session('user'))
+            <h3>hey, {{session('user')->username}}</h3>
+            @endif
+        </div>
         <div class="header-btns">
 
             <a id="cart-btn" href="#">My Cart</a>
