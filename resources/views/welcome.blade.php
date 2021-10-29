@@ -17,7 +17,7 @@
             <h1>E-commerce web</h1>
         </div>
         
-
+        
         <div class="header-btns">
 
             <a id="cart-btn" href="#">My Cart</a>
