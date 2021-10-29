@@ -20,9 +20,15 @@
 
         <div class="header-left">
             <span class="name">
-                Anandhu
+                @if(session('user'))
+                {{session('user')->username}}
+                @endif
             </span>
-            <a href="" class="logout-btn">Logout</a>
+            @if(session('user'))
+            <a href="/logout" class="logout-btn">Logout</a>
+            @else
+            <a href="/login" class="logout-btn">Login</a>
+            @endif
             <a href="" class="logout-btn">Cart</a>
         </div>
 </div>

@@ -55,16 +55,16 @@ Route::get('/cart', function () {
 // });
 
 
-Route::post('/dashboard/add','productController@addProduct');
-
-
+Route::get('/dashboard/add','productController@showForm')->middleware('admin');
 Route::get('/dashboard/{id}','productController@deleteProduct');
+
+ Route::post('/dashboard/add','productController@addProduct');
+
 
 Route::get('/itemList/{cat}', 'productController@fetchProduct');
 Route::post('/login','loginController@login');
 Route::get('/admin/logout','logoutController@adminLogout');
 Route::get('/logout','logoutController@userLogout');
-Route::get('/dashboard/add','productController@showForm')->middleware('admin');
 
 
 
