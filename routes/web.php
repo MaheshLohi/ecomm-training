@@ -53,16 +53,20 @@ Route::get('/cart', function () {
 
 
 
+Route::get('/dashboard/add','productController@showForm')->middleware('admin');
+Route::get('/dashboard/{id}','productController@deleteProduct');
 
-//add product form
-Route::post('/dashboard/add', 'productController@addProduct');
-Route::get('/dashboard/add', 'productController@showForm')->middleware('admin');
+ Route::post('/dashboard/add','productController@addProduct');
 
-//Delete product
-Route::get('/dashboard/{id}', 'productController@deleteProduct');
 
-//List al products
+//List all products
 Route::get('/itemList/{cat}', 'productController@fetchProduct');
+
+Route::post('/login','loginController@login');
+Route::get('/admin/logout','logoutController@adminLogout');
+Route::get('/logout','logoutController@userLogout');
+
+
 
 //Place order 
 

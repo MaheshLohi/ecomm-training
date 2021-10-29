@@ -23,12 +23,7 @@
         </div>
 
 
-        <div class="header-left">
-            <span class="name">
-                Urban Enterprises
-            </span>
-            <a href="" class="logout-btn">Logout</a>
-        </div>
+        
 
     </div>
 
