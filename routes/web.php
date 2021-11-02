@@ -23,7 +23,7 @@ Route::get('/', function () {
 
 Route::get('/dashboard', 'dashboardController@providerView');
 
-
+Route::get('/dashboard', 'dashboardController@orderView'); 
 
 Route::get('/orderdetails', 'orderdetailsController@orderdetailsView');
 
