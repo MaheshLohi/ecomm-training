@@ -20,10 +20,10 @@ Route::get('/', function () {
 
 
 
-
+Route::get('/dashboard/add','productController@showForm')->middleware('admin');
 Route::get('/dashboard', 'dashboardController@providerView');
 
-Route::get('/dashboard', 'dashboardController@orderView'); 
+//Route::get('/dashboard', 'dashboardController@orderView'); 
 
 Route::get('/orderdetails', 'orderdetailsController@orderdetailsView');
 
@@ -55,7 +55,7 @@ Route::get('/cart', function () {
 // });
 
 
-Route::get('/dashboard/add','productController@showForm')->middleware('admin');
+
 Route::get('/dashboard/{id}','productController@deleteProduct');
 
  Route::post('/dashboard/add','productController@addProduct');

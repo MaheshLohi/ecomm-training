@@ -85,21 +85,24 @@
                 </span>
             </div>
             <div class="order-list">
-                <div class="order">
+             @foreach($users as $user)
+             <div class="order">
 
-                    <div class="order-top">
-                        <span class="name">
-                        {{$users->name}}  
-                        </span>
-                        <span class="time">
-                        {{$users->Time}} 
-                        </span>
-                        <span class="status-red">{{$users->status}} </span>
-                    </div>
+<div class="order-top">
+    <span class="name">
+    {{$user->name}}  
+    </span>
+    <span class="time">
+    {{$user->Time}} 
+    </span>
+    <span class="status-red">{{$user->status}} </span>
+</div>
 
-                    <div class="order-bottom">
-                        <a href="" class="btn-details">View Details -></a>
-                    </div>
+<div class="order-bottom">
+    <a href="" class="btn-details">View Details -></a>
+</div>
+
+             @endforeach
                 </div>
                 
                 

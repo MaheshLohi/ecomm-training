@@ -17,7 +17,7 @@ class orderRepo
         $this->orderModel->save();
     }
     public function fetchOrder($order_cat) {
-        $data = $this->orderModel->where('category',$order_cat)->get();
-        return json_decode($data);
+        $users = $this->orderModel->where('category',$order_cat)->get();
+        return json_decode($users);
     }
 }  

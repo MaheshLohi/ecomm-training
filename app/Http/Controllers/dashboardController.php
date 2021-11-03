@@ -9,9 +9,10 @@ use App\Repository\orderRepo;
 class dashboardController extends Controller
 {
     public $productRepo;
-    public function __construct(productRepo $productRepo)
+    public function __construct(productRepo $productRepo,orderRepo $orderRepo)
     {
         $this->productRepo = $productRepo;
+        $this->orderRepo=$orderRepo;
     }
 
     
@@ -20,32 +21,15 @@ class dashboardController extends Controller
     {
         $admin_cat = session('admin')->category;
         $response = $this->productRepo->fetchProduct($admin_cat);
-        // print_r($response);
-       return view('admin.dashboard',['datas'=>$response]);
+        
+        $users = $this->orderRepo->fetchOrder($admin_cat);
+        
+       return view('admin.dashboard',['datas'=>$response,'users'=>$users]);
 
     }
 
 
-    // public $orderRepo;
-    // public function __construct(orderRepo $orderRepo)
-    // {
-    //     $this->orderRepo = $orderRepo;
-    // }
- 
     
-    public function orderView()
-    {
-        {
-            $users=\DB::table('orders')->where('name','princy')->first();
-           return view('admin.dashboard',['users'=>$users]);
-        }
-
-    //     $admin_cat = session('admin')->category;
-    //     $users = $this->orderRepo->fetchOrder($admin_cat);
-    //    print_r($response);
-    //     return view('admin.dashboard',['datas'=>$users]);
-
-    }
 
 
 }
