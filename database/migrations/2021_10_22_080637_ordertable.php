@@ -17,11 +17,10 @@ class Ordertable extends Migration
         { 
             $table->bigIncrements('id');
             $table->timestamps();
-            $table->string('products');
-            $table->string('price');
+            $table->string('name');
             $table->string('status');
-            $table->string('phone');
-            $table->string('Date & Time');
+            $table->string('category');
+            $table->string('Time');
             
         
         
@@ -35,6 +34,6 @@ class Ordertable extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('orders');
     }
 }

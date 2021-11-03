@@ -85,88 +85,27 @@
                 </span>
             </div>
             <div class="order-list">
-                <div class="order">
+             @foreach($users as $user)
+             <div class="order">
 
-                    <div class="order-top">
-                        <span class="name">
-                            Anandhu
-                        </span>
-                        <span class="time">
-                            2021-10-11 05:58:56
-                        </span>
-                        <span class="status-red">Pending</span>
-                    </div>
+<div class="order-top">
+    <span class="name">
+    {{$user->name}}  
+    </span>
+    <span class="time">
+    {{$user->Time}} 
+    </span>
+    <span class="status-red">{{$user->status}} </span>
+</div>
 
-                    <div class="order-bottom">
-                        <a href="" class="btn-details">View Details -></a>
-                    </div>
+<div class="order-bottom">
+    <a href="" class="btn-details">View Details -></a>
+</div>
+
+             @endforeach
                 </div>
-                <div class="order">
-
-                    <div class="order-top">
-                        <span class="name">
-                            Anandhu
-                        </span>
-                        <span class="time">
-                            2021-10-11 05:58:56
-                        </span>
-                        <span class="status-red">Pending</span>
-                    </div>
-
-                    <div class="order-bottom">
-                        <a href="" class="btn-details">View Details -></a>
-                    </div>
-                </div>
-
-
-                <div class="order">
-
-                    <div class="order-top">
-                        <span class="name">
-                            Anandhu
-                        </span>
-                        <span class="time">
-                            2021-10-11 05:58:56
-                        </span>
-                        <span class="status-green">Shipped</span>
-                    </div>
-
-                    <div class="order-bottom">
-                        <a href="" class="btn-details">View Details -></a>
-                    </div>
-                </div>
-                <div class="order">
-
-                    <div class="order-top">
-                        <span class="name">
-                            Anandhu
-                        </span>
-                        <span class="time">
-                            2021-10-11 05:58:56
-                        </span>
-                        <span class="status-green">Shipped</span>
-                    </div>
-
-                    <div class="order-bottom">
-                        <a href="" class="btn-details">View Details -></a>
-                    </div>
-                </div>
-                <div class="order">
-
-                    <div class="order-top">
-                        <span class="name">
-                            Anandhu
-                        </span>
-                        <span class="time">
-                            2021-10-11 05:58:56
-                        </span>
-                        <span class="status-red">Pending</span>
-                    </div>
-
-                    <div class="order-bottom">
-                        <a href="" class="btn-details">View Details -></a>
-                    </div>
-                </div>
+                
+                
 
 
             </div>
